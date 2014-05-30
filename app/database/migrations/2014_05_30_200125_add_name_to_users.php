@@ -13,7 +13,7 @@ class AddNameToUsers extends Migration {
 	public function up()
 	{
 		Schema::table('users', function($table) {
-			$table->string('name', 255);
+			$table->string('name', 255)->default('none');
 		});
 	}
 
