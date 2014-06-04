@@ -13,5 +13,19 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	$users = DB::table('users')->get();
+
+  foreach ($users as $user)
+  {
+      var_dump($user->name);
+  }
+});
+
+Route::get('/add', function()
+{
+  for($i = 0; $i < 10000; $i++)
+  {
+    DB::table('users')->insert(
+      array('name' => $i)
+  );
 });
