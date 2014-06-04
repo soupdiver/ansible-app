@@ -26,6 +26,7 @@ Route::get('/add', function()
   for($i = 0; $i < 10000; $i++)
   {
     DB::table('users')->insert(
-      array('name' => $i)
-  );
+        array('name' => $i)
+    );
+  }
 });
