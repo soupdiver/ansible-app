@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'sqlite',
+	'default' => 'pgsql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,10 +65,10 @@ return array(
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
-			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
+			'host'     => '192.168.22.12',
+			'database' => 'cluster',
+			'username' => 'foobar',
+			'password' => 'foobar',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
