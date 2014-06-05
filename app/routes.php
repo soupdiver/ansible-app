@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-  echo "Server: $_SERVER['SERVER_ADDR']<br>";
+  echo "Server: ".$_SERVER['SERVER_ADDR']."<br>";
 	
   $users = DB::table('users')->get();
 
