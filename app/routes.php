@@ -13,7 +13,9 @@
 
 Route::get('/', function()
 {
-	$users = DB::table('users')->get();
+  echo "Server: $_SERVER['SERVER_ADDR']<br>";
+	
+  $users = DB::table('users')->get();
 
   foreach ($users as $user)
   {
