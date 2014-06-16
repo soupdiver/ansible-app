@@ -13,6 +13,9 @@
 
 Route::get('/', function()
 {
+
+  return View::make('hello');
+  
   echo "Server: ".$_SERVER['SERVER_ADDR']."<br>";
 	
   $users = DB::table('users')->get();
